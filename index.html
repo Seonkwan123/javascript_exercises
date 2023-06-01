@@ -9,13 +9,26 @@
 <body>
     <script>
         function add7(num) {
-            return (num + 7)
+            return (num + 7);
         }
         function multiply (num1, num2) {
-            return (num1 * num2)
+            return (num1 * num2);
+        }
+
+        function capitalize(string) {
+            if (typeof(string) == 'string') {
+                let firstChar = string.charAt(0).toUpperCase();
+                let stringWithoutFirstLetter = string.slice(1);
+                let finalString = firstChar + stringWithoutFirstLetter;
+                return finalString;
+                
+            }
+            return ('Please input a string')
         }
         console.log(add7(3))
         console.log(multiply(4,3))
+        console.log(capitalize('bob'))
+
     </script>
 </body>
 </html>
